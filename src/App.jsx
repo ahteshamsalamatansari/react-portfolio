@@ -1,8 +1,14 @@
-import Home from "./components/Home/Home";
+import Header from "./components/Home/Header";
+import Routing from "./utils/Routing";
 
 const App = () => {
   return (
-  <Home/>
+    <>
+
+      <Header/>
+      <Routing />
+    </>
+    
   );
 };
 

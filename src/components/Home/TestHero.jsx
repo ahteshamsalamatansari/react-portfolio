@@ -4,7 +4,7 @@ const TestHero = () => {
     const HERO_CONTENT = "I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.";
   
     return (
-      <div className="w-full py-4 md:py-8 lg:mt-4 px-8">
+      <div className="w-full py-4 md:py-8 lg:mt-4 px-8 mt-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-8">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start">

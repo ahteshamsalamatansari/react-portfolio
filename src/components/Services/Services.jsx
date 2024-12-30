@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const Services = () => {
   return (
     <section className="h-screen overflow-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
     <div className="fixed top-0 -z-10 h-full w-full">
@@ -13,8 +13,7 @@ const About = () => {
      
     </div>
   </section>
-);
-  
+  )
 }
 
-export default About
+export default Services
