@@ -1,73 +1,90 @@
-import { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useEffect, useRef, useState } from "react";
+
 const Navbar = ({ navOpen }) => {
-  const lastActiveLink = useRef();
   const activeBox = useRef();
-  const initActiveBox = () => {
-    activeBox.current.style.top = lastActiveLink.current.offsetTop + 'px';
-    activeBox.current.style.left = lastActiveLink.current.offsetLeft + 'px';
-    activeBox.current.style.width = lastActiveLink.current.offsetWidth + 'px';
-    activeBox.current.style.height = lastActiveLink.current.offsetHeight + 'px';
-  }
-  useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox)
+  const [activeLink, setActiveLink] = useState(null);
 
-  const activeCurrentLink = (event) => {
-    lastActiveLink.current?.classList.remove('active');
-    event.target.classList.add('active');
-    lastActiveLink.current = event.target;
+  const updateActiveBox = (element) => {
+    if (activeBox.current && element) {
+      activeBox.current.style.top = element.offsetTop + 'px';
+      activeBox.current.style.left = element.offsetLeft + 'px';
+      activeBox.current.style.width = element.offsetWidth + 'px';
+      activeBox.current.style.height = element.offsetHeight + 'px';
+    }
+  };
 
-    activeBox.current.style.top = event.target.offsetTop + "px";
-    activeBox.current.style.left = event.target.offsetLeft + "px";
-    activeBox.current.style.width = event.target.offsetWidth + "px";
-    activeBox.current.style.height = event.target.offsetHeight + "px";
+  // Handle the initial active link on mount
+  useEffect(() => {
+    const initialActiveElement = document.querySelector(".nav-link.active");
+    if (initialActiveElement) {
+      setActiveLink(initialActiveElement); // Set initial active link
+      updateActiveBox(initialActiveElement); // Update active box for the initial active link
+    }
 
+    // Update active box on resize
+    const handleResize = () => {
+      if (activeLink) {
+        updateActiveBox(activeLink);
+      }
+    };
 
-  }
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [activeLink]); // Dependency on activeLink to update whenever it changes
+
   const navItems = [
     {
       label: 'Home',
       link: '/',
-      className: 'nav-link active',
-      ref: lastActiveLink
     },
     {
       label: 'About',
       link: '/about',
-      className: 'nav-link'
     },
     {
       label: 'Portfolio',
       link: '/portfolio',
-      className: 'nav-link'
     },
     {
       label: 'Services',
       link: '/services',
-      className: 'nav-link'
     },
     {
       label: 'Contact',
       link: '/contact',
-      className: 'nav-link md:hidden'
     }
   ];
 
   return (
     <nav className={'navbar ' + (navOpen ? 'active' : "")}>
-      {navItems.map(({ label, link, className, ref }, key) => (
-        <Link to={link} className={className} key={key} ref={ref} onClick={activeCurrentLink}>
+      {navItems.map(({ label, link }, key) => (
+        <NavLink 
+          to={link} 
+          className={({ isActive }) => {
+            if (isActive) {
+              setActiveLink(document.querySelector(`a[href='${link}']`));
+              return "nav-link active";
+            } 
+            return "nav-link";
+          }} 
+          key={key} 
+        >
           {label}
-        </Link>
+        </NavLink>
       ))}
-      <div className="active-box" ref={activeBox}>
-      </div>
+      <div className="active-box" ref={activeBox}></div>
     </nav>
-  )
-}
+  );
+};
+
 Navbar.propTypes = {
   navOpen: PropTypes.bool.isRequired
-}
+};
 
 export default Navbar;
