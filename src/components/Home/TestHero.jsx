@@ -1,10 +1,11 @@
-import { GithubActions_Dark } from "react-skillicons";
+
 import profilePic from "../../assets/maddyProfile.png";
 import { HERO_CONTENT } from "../../constants/index";
+import SkillIcons from "./SkillIcons";
 
 const TestHero = () => {
   return (
-    <>
+    <div className="col">
       <div className="hero w-full py-4 lg:mt-4 px-4 md:mx-auto mt-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between md:mt-14">
           <div className="w-full text-center lg:text-left">
@@ -15,7 +16,7 @@ const TestHero = () => {
               <span className="mt-0 bg-gradient-to-r from-pink-300 via-zinc-200 to-purple-500 bg-clip-text text-lg md:text-xl lg:text-3xl tracking-tight text-transparent">
                 Full Stack Developer
               </span>
-              <p className="mt-0 max-w-md text-sm md:text-base font-light tracking-tighter px-4 lg:px-0">
+              <p className="mt-0 max-w-md text-sm md:text-base font-Dark tracking-tighter px-4 lg:px-0">
                 {HERO_CONTENT}
               </p>
             </div>
@@ -29,8 +30,15 @@ const TestHero = () => {
           </div>
         </div>
       </div>
-
-    </>
+      <section className="container w-full h-screen p-4 mx-auto md:mt-14">
+        <div className="container">
+          <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5">
+            Professional <span> Skillset </span>
+          </h1>
+          <SkillIcons/>
+        </div>
+      </section>
+    </div>
   );
 };
 
