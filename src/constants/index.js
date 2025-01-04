@@ -6,8 +6,7 @@ import project4 from "../assets/projects/project-4.jpg";
 
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Whether you're looking to brainstorm, collaborate, or get technical advice, I’m here to help your projects reach new heights. Let's connect and make something extraordinary happen!`;
 export const iconClass = ["h-12 w-12 hover:scale-125 hover:cursor-pointer transition-all ease-in-out duration:900"];
 
 export const EXPERIENCES = [
@@ -77,3 +76,31 @@ export const CONTACT = {
   phoneNo: "+12 4555 666 00 ",
   email: "me@example.com",
 };
+
+export const SOCIAL_MEDIA = [
+  {
+    name: "Github",
+    icon: "fa-github",
+    url: "https://github.com/your-username",
+  },
+  {
+    name: "LinkedIn",
+    icon: "fab fa-linkedin",
+    url: "https://www.linkedin.com/in/your-profile",
+  },
+  {
+    name: "Instagram",
+    icon: "fab fa-instagram",
+    url: "https://www.instagram.com/your-username",
+  },
+  {
+    name: "Twitter",
+    icon: "fab fa-twitter",
+    url: "https://www.twitter.com/your-username",
+  },
+  {
+    name: "Facebook",
+    icon: "fab fa-facebook-f",
+    url: "https://www.facebook.com/your-profile",
+  },
+]

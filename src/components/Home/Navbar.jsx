@@ -36,33 +36,18 @@ const Navbar = ({ navOpen }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [activeLink]); // Dependency on activeLink to update whenever it changes
+  }, [activeLink]);
 
   const navItems = [
-    {
-      label: 'Home',
-      link: '/',
-    },
-    {
-      label: 'About',
-      link: '/about',
-    },
-    {
-      label: 'Portfolio',
-      link: '/portfolio',
-    },
-    {
-      label: 'Services',
-      link: '/services',
-    },
-    {
-      label: 'Contact',
-      link: '/contact',
-    }
+    { label: 'Home', link: '/' },
+    { label: 'About', link: '/about' },
+    { label: 'Portfolio', link: '/portfolio' },
+    { label: 'Services', link: '/services' },
+    { label: 'Contact', link: '/contact' }
   ];
 
   return (
-    <nav className={'navbar ' + (navOpen ? 'active' : "")}>
+    <nav className={`navbar ${navOpen ? 'active' : ''}`}>
       {navItems.map(({ label, link }, key) => (
         <NavLink 
           to={link} 
@@ -70,10 +55,10 @@ const Navbar = ({ navOpen }) => {
             if (isActive) {
               setActiveLink(document.querySelector(`a[href='${link}']`));
               return "nav-link active";
-            } 
+            }
             return "nav-link";
           }} 
-          key={key} 
+          key={key}
         >
           {label}
         </NavLink>

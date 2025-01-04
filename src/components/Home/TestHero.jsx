@@ -1,9 +1,12 @@
-
 import profilePic from "../../assets/maddyProfile.png";
 import { HERO_CONTENT } from "../../constants/index";
 import SkillIcons from "./SkillIcons";
+import SocialFooter from "./SocialFooter";
+import { SOCIAL_MEDIA } from "../../constants/index";
+import { ABOUT_TEXT } from "../../constants/index";
 
 const TestHero = () => {
+  const socialMedia = SOCIAL_MEDIA;
   return (
     <div className="col">
       <div className="hero w-full py-4 lg:mt-4 px-4 md:mx-auto mt-10">
@@ -30,12 +33,23 @@ const TestHero = () => {
           </div>
         </div>
       </div>
-      <section className="container w-full h-screen p-4 mx-auto md:mt-14">
+      <section className="container w-full p-4 mx-auto md:mt-14">
         <div className="container">
           <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5">
             Professional <span> Skillset </span>
           </h1>
-          <SkillIcons/>
+          <SkillIcons />
+          <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5 mt-16">
+            Get Into <span> Touch </span>
+          </h1>
+          <p className="text-center mt-4 font-sans tracking-tighter selection:bg-sky-400">
+            {ABOUT_TEXT}
+          </p>
+          <div className="w-full h-10 flex items-center justify-center space-x-3 mt-9">
+            {socialMedia.map((social, index) => (
+              <SocialFooter values={social} key={index} />
+            ))}
+          </div>
         </div>
       </section>
     </div>
