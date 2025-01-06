@@ -13,8 +13,8 @@ const Contact = () => {
           Get Into <span> Touch </span>
         </h1>
         <p className="text-center mt-4 font-sans tracking-tighter selection:bg-sky-400">
-            {ABOUT_TEXT}
-          </p>
+          {ABOUT_TEXT}
+        </p>
         <div className="ml-2 md:ml-0 w-full mt-5  md:flex md:items-center md:justify-between border-2 py-4 px-3 border-zinc-50/10 rounded-md">
           <form className="md:w-1/2  mt-5 md:mt-0 items-center" action="#">
             <div className="mt-5 flex flex-col">
