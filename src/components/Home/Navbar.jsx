@@ -40,7 +40,7 @@ const Navbar = ({ navOpen }) => {
 
   const navItems = [
     { label: 'Home', link: '/' },
-    { label: 'About', link: '/about' },
+    { label: 'Experience', link: '/experience' },
     { label: 'Portfolio', link: '/portfolio' },
     { label: 'Services', link: '/services' },
     { label: 'Contact', link: '/contact' }
