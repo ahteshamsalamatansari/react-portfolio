@@ -26,7 +26,7 @@ const Portfolio = () => {
                 />
               </a>
             </div>
-            <div className="p-5">
+            <div className="p-5 pb-12">
               <a href="#">
                 <h5 className="mb-2 text-2xl font-medium tracking-tight text-purple-300 ">
                   {proj.title}
@@ -36,7 +36,7 @@ const Portfolio = () => {
 
               <a
                 href="#"
-                className="absolute bottom-3 right-5 inline-flex  items-center px-3 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-box hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 "
+                className="absolute bottom-3 inline-flex  items-center px-3 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-box hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 "
               >
                 Visit
                 <svg
