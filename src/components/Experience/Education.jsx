@@ -1,40 +1,18 @@
-import { EXPERIENCES } from "../../constants";
-
-const Education = () => {
+const Education = ({ evalues, key }) => {
+  const { year, role, university, description } = evalues;
   return (
-    <div className="w-full h-full container mb-2">
-      <h2 className="pt-11 my-20 text-center text-4xl"> Work Experience </h2>
-      <div>
-        {EXPERIENCES.map((experience, index) => {
-          return (
-            <div key={index} className="mb-8 flex flex-wrap  lg:justify-center">
-              <div className="w-full lg:w-1/4">
-                <p className="mb-2 text-sm text-neutral-400">
-                  {experience.year}
-                </p>
-              </div>
-              <div className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold ">
-                  {experience.role} -{" "}
-                  <span className="text-sm text-purple-100">
-                    {experience.company}
-                  </span>
-                </h6>
-                <p className="mb-4 text-neutral-400">
-                  {experience.description}
-                </p>
-                {experience.technologies.map((tech, index) => (
-                  <span
-                    className="mr-2 mt-4 rounded-md bg-neutral-900 px-2 py-1 font-medium text-cyan-500"
-                    key={index}
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          );
-        })}
+    <div>
+      <div className="mb-8 flex flex-wrap  lg:justify-center">
+        <div className="w-full lg:w-1/4">
+          <p className="mb-2 text-sm text-neutral-400">{year}</p>
+        </div>
+        <div className="w-full max-w-xl lg:w-3/4">
+          <h6 className="mb-2 font-semibold ">
+            {role} -{" "}
+            <span className="text-sm text-purple-100">{university}</span>
+          </h6>
+          <p className="mb-4 text-neutral-400">{description}</p>
+        </div>
       </div>
     </div>
   );

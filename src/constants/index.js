@@ -40,6 +40,33 @@ export const EXPERIENCES = [
   },
 ];
 
+export const EDUCATION = [
+  {
+    year: "2023 - Present",
+    role: "Senior Full Stack Developer",
+    university: "Google Inc.",
+    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+  },
+  {
+    year: "2022 - 2023",
+    role: "Frontend Developer",
+    university: "Adobe",
+    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+  },
+  {
+    year: "2021 - 2022",
+    role: "Full Stack Developer",
+    university: "Facebook",
+    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+  },
+  {
+    year: "2020 - 2021",
+    role: "Software Engineer",
+    university: "Paypal",
+    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+  },
+];
+
 export const PROJECTS = [
   {
     title: "E-Commerce Website",
