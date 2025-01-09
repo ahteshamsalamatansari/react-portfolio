@@ -42,7 +42,7 @@ const Navbar = ({ navOpen }) => {
     { label: 'Home', link: '/' },
     { label: 'Experience', link: '/experience' },
     { label: 'Portfolio', link: '/portfolio' },
-    { label: 'Services', link: '/services' },
+    { label: 'Reusme', link: '/resume' },
     { label: 'Contact', link: '/contact' }
   ];
 

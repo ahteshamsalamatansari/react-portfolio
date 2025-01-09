@@ -1,7 +1,7 @@
 import profilePic from "../../assets/maddyProfile.png";
 import { HERO_CONTENT } from "../../constants/index";
 import SkillIcons from "./SkillIcons";
-import SocialFooter from "./SocialFooter";
+import SocialFooter from "../Footer/SocialFooter";
 import { SOCIAL_MEDIA } from "../../constants/index";
 import { ABOUT_TEXT } from "../../constants/index";
 
@@ -10,7 +10,7 @@ const TestHero = () => {
   return (
     <div className="col">
       <div className="hero w-full py-4 lg:mt-4 px-4 md:mx-auto mt-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between md:mt-14">
+        <div className="flex flex-col-reverse md:gap-16 lg:flex-row items-center justify-between md:mt-14">
           <div className="w-full text-center lg:text-left">
             <div className="hero-content flex flex-col items-center lg:items-start">
               <h1 className="text-3xl md:text-4xl lg:text-6xl font-thin tracking-tight leading-tight">

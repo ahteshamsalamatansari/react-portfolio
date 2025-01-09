@@ -131,3 +131,43 @@ export const SOCIAL_MEDIA = [
     url: "https://www.facebook.com/your-profile",
   },
 ]
+
+export const BLOGS = [
+  {
+    title: "How to Create a Compelling Logo Design",
+    date: "July 12, 2023",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    author: "Maddy",
+    image : "https://plus.unsplash.com/premium_photo-1723299602204-deac42432f93?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+  },
+  {
+    title: "Top 5 Tips for Building a Strong Team",
+    date: "July 8, 2023",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    author: "Maddy",
+    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
+    
+  },
+  {
+    title: "Top 5 Tips for Building a Strong Team",
+    date: "July 8, 2023",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    author: "Maddy",
+    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
+  },
+  {
+    title: "Top 5 Tips for Building a Strong Team",
+    date: "July 8, 2023",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    author: "Maddy",
+    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
+  },
+  {
+    title: "Top 5 Tips for Building a Strong Team",
+    date: "July 8, 2023",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    author: "Maddy",
+    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
+  },
+] 
