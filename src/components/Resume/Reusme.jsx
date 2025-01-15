@@ -1,12 +1,22 @@
-import { bggradient } from "../../constants";
-import { Document, Page, pdfjs } from "react-pdf";
-import resume from "../../assets/pdf/resume.pdf";
+import { useState } from 'react';
+import { bggradient } from '../../constants/index';
+import resume from '../../assets/pdf/resume.pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
 
-// Set the worker path
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/+esm';
+// Log the version to verify
+console.log('PDF.js version:', pdfjs.version);
 
+// Use the matching version
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
-const Reusme = () => {
+const Resume = () => {
+  const [numPages, setNumPages] = useState();
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   return (
     <section className="flex text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
       <div className="fixed top-0 -z-10 h-full w-full">
@@ -14,17 +24,29 @@ const Reusme = () => {
           <div className={bggradient}></div>
         </div>
       </div>
-      <div className="w-full h-full mt-28 overflow-auto">
+      <div className="container flex flex-col justify-center items-center w-full p-5 mt-28 overflow-auto">
         <Document
           file={resume}
-          onLoadError={(error) => console.error("Error loading PDF:", error)}
-          onLoadSuccess={() => console.log("PDF loaded successfully")}
+          onLoadSuccess={onDocumentLoadSuccess}
+          loading="Loading PDF..."
         >
-          <Page pageNumber={1} />
+          {Array.apply(null, Array(numPages)).map((x, i) => i + 1).map(page => {
+            return (
+              <Page
+                key={page}
+                className="mt-3 w-[100%]"
+                pageNumber={page}
+                renderTextLayer={false}
+                renderAnnotationLayer={false}
+                
+              />
+            );
+          })}
         </Document>
+        
       </div>
     </section>
   );
 };
 
-export default Reusme;
+export default Resume;
