@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { bggradient } from '../../constants/index';
 import resume from '../../assets/pdf/resume.pdf';
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -12,6 +12,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const Resume = () => {
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  // Update the width on window resize
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -24,26 +35,44 @@ const Resume = () => {
           <div className={bggradient}></div>
         </div>
       </div>
-      <div className="container flex flex-col justify-center items-center w-full p-5 mt-28 overflow-auto">
+      <div className="container flex flex-col justify-center items-center mt-28 overflow-auto">
+        {/* First download button */}
+        <a href={resume} download>
+          <button className="mb-7 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-purple-600 px-6 font-medium text-neutral-200">
+            <span>Download</span>
+            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+              <div className="relative h-full w-8 bg-white/20"></div>
+            </div>
+          </button>
+        </a>
+
+        {/* PDF Viewer */}
         <Document
           file={resume}
           onLoadSuccess={onDocumentLoadSuccess}
-          loading="Loading PDF..."
+          loading  ={<span style={{ color: '#D8B4FE' }}>Loading PDF...</span>}
         >
-          {Array.apply(null, Array(numPages)).map((x, i) => i + 1).map(page => {
-            return (
-              <Page
-                key={page}
-                className="mt-3 w-[100%]"
-                pageNumber={page}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-                
-              />
-            );
-          })}
+          {Array.from({ length: numPages }, (_, index) => index + 1).map(page => (
+            <Page
+              key={page}
+              className="mt-3"
+              pageNumber={page}
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+              scale={width > 786 ? 1 : 0.5} // Adjust scale based on width
+            />
+          ))}
         </Document>
-        
+
+        {/* Second download button */}
+        <a href={resume} download>
+          <button className="mt-7 mb-8 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-purple-600 px-6 font-medium text-neutral-200">
+            <span>Download</span>
+            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+              <div className="relative h-full w-8 bg-white/20"></div>
+            </div>
+          </button>
+        </a>
       </div>
     </section>
   );

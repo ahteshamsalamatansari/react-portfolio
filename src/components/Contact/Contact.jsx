@@ -1,71 +1,73 @@
-import { ABOUT_TEXT } from "../../constants";
+import { ABOUT_TEXT, bggradient } from "../../constants";
 
 const Contact = () => {
   return (
-    <section className="  text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
+    <section className="text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
       <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="relative h-full w-full bg-slate-950">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div className="h-full w-full bg-slate-950">
+          <div className={bggradient}></div>
         </div>
       </div>
-      <div className="relative w-full container mx-auto px-8 flex flex-col mt-10">
-        <h1 className="uppercase text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5 mt-16">
-          Get Into <span> Touch </span>
-        </h1>
-        <p className="text-center mt-4 font-sans tracking-tighter selection:bg-sky-400">
-          {ABOUT_TEXT}
+
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 className="mb-4 mt-16 text-4xl tracking-tight font-extrabold text-center text-zinc-50">
+          Contact Us
+        </h2>
+        <p className="mb-8 lg:mb-6 font-light text-center text-zinc-300 sm:text-xl">
+          {ABOUT_TEXT }
         </p>
-        <div className="ml-2 md:ml-0 w-full mt-5  md:flex md:items-center md:justify-between border-2 py-4 px-3 border-zinc-50/10 rounded-md">
-          <form className="md:w-1/2  mt-5 md:mt-0 items-center" action="#">
-            <div className="mt-5 flex flex-col">
-              <label className="text-m font-semibold p-2 " htmlFor="Name">
-                Name
-              </label>
-              <input
-                placeholder="Enter Your Name"
-                className="md:w-[65%] w-full rounded-md text-black input-sm input-bordered"
-                type="text"
-                name="Name"
-                id=""
-              />
-            </div>
-            <div className="mt-5 flex flex-col">
-              <label className="text-m font-semibold p-2" htmlFor="Name">
-                Email
-              </label>
-              <input
-                placeholder="Enter Your Email"
-                className="md:w-[65%] w-full rounded-md text-black input-sm input-bordered"
-                type="email"
-                name="Name"
-                id=""
-              />
-            </div>
-            <div className="mt-5 flex flex-col">
-              <label className="text-m font-semibold p-2" htmlFor="Name">
-                Your Message
-              </label>
-              <input
-                placeholder="Hi Maddy..."
-                className="md:w-[65%] w-full h-32 rounded-md text-black input-sm input-bordered"
-                type="text"
-                name="Name"
-                id=""
-              />
-            </div>
-          </form>
-          <div className="mockup-code mt-10 w-full h-45 md:mt-0 md:w-96 md:h-72">
-            <pre data-prefix="1">
-              <code>Maddy was busy with your issue</code>
-            </pre>
-            <pre data-prefix="2">
-              <code>Processing...</code>
-            </pre>
-            <pre data-prefix="3" className="bg-green-600 text-warning-content">
-              <code>Solved!</code>
-            </pre>
+        <form action="#" className="space-y-8">
+          <div>
+            <label
+              htmlFor="email"
+              className="block mb-2 text-sm font-medium text-zinc-50"
+            >
+              Your email
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="shadow-sm bg-zinc-900 border border-zinc-700 text-zinc-200 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5"
+              placeholder="📧 Your inbox is waiting! Share your email with us. ✨"
+              required
+            />
           </div>
-        </div>
+          <div>
+            <label
+              htmlFor="subject"
+              className="block mb-2 text-sm font-medium text-zinc-50"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              className="block p-3 w-full text-sm text-zinc-200 bg-zinc-900 rounded-lg border border-zinc-700 shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
+              placeholder="📝 What’s on your mind? Let us know how we can help! 💡"
+              required
+            />
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="message"
+              className="block mb-2 text-sm font-medium text-zinc-50"
+            >
+              Your message
+            </label>
+            <textarea
+              id="message"
+              rows="6"
+              className="block p-2.5 w-full text-sm text-zinc-200 bg-zinc-900 rounded-lg shadow-sm border border-zinc-700 focus:ring-cyan-500 focus:border-cyan-500"
+              placeholder="💬 Drop us a message, we’re all ears! 👂"
+            />
+          </div>
+          <button
+            type="submit"
+            className="py-3 px-5 text-sm font-medium text-center text-zinc-200 rounded-lg bg-purple-600 sm:w-fit hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-cyan-300"
+          >
+            Send message
+          </button>
+        </form>
       </div>
     </section>
   );
