@@ -1,7 +1,8 @@
+import { motion } from "motion/react";
 const Education = ({ evalues, key }) => {
   const { year, role, university, description } = evalues;
   return (
-    <div>
+    <motion.div initial={{opacity:0}} whileInView={{opacity:[0,0,1]}} transition={{delay:0.2, duration:1}} >
       <div className="mb-8 flex flex-wrap  lg:justify-center">
         <div className="w-full lg:w-1/4">
           <p className="mb-2 text-sm text-neutral-400">{year}</p>
@@ -14,7 +15,7 @@ const Education = ({ evalues, key }) => {
           <p className="mb-4 text-neutral-400">{description}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

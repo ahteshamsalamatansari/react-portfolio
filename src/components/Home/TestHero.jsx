@@ -4,21 +4,22 @@ import SkillIcons from "./SkillIcons";
 import SocialFooter from "../Footer/SocialFooter";
 import { SOCIAL_MEDIA } from "../../constants/index";
 import { ABOUT_TEXT } from "../../constants/index";
+import { motion } from 'motion/react';
+import TypewriterText from "../../constants/TypewriterText";
 
 const TestHero = () => {
   const socialMedia = SOCIAL_MEDIA;
   return (
+    
     <div className="col">
       <div className="hero w-full py-4 lg:mt-4 px-4 md:mx-auto mt-10">
         <div className="flex flex-col-reverse md:gap-16 lg:flex-row items-center justify-between md:mt-14">
           <div className="w-full text-center lg:text-left">
             <div className="hero-content flex flex-col items-center lg:items-start">
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-thin tracking-tight leading-tight">
-                Mudassir Hussain Ansari
-              </h1>
-              <span className="mt-0 bg-gradient-to-r from-pink-300 via-zinc-200 to-purple-500 bg-clip-text text-lg md:text-xl lg:text-3xl tracking-tight text-transparent">
+              <TypewriterText text="Mudassir Hussain Ansari" />
+              <motion.span className="mt-0 bg-gradient-to-r from-pink-300 via-zinc-200 to-purple-500 bg-clip-text text-lg md:text-xl lg:text-3xl tracking-tight text-transparent">
                 Full Stack Developer
-              </span>
+              </motion.span>
               <p className="mt-0 max-w-md text-sm md:text-base font-Dark tracking-tighter px-4 lg:px-0">
                 {HERO_CONTENT}
               </p>

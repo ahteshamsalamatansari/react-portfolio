@@ -1,6 +1,7 @@
 import { bggradient, PROJECTS } from "../../constants/index.js";
 import Blog from "./Blog.jsx";
 import { BLOGS } from "../../constants/index.js";
+import { motion } from "motion/react";
 const Portfolio = () => {
   return (
     <section className="flex text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
@@ -9,6 +10,12 @@ const Portfolio = () => {
           <div className={bggradient}></div>
         </div>
       </div>
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+        >
       <div className="w-full h-full container mb-2  mt-28 gap-5">
         <h2 className="text-center mb-10 text-4xl font-bold uppercase">
           {" "}
@@ -72,6 +79,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };

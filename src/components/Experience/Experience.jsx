@@ -1,5 +1,7 @@
 import { bggradient, EXPERIENCES, EDUCATION } from "../../constants";
+
 import Education from "./Education";
+import { motion } from "motion/react";
 
 const Experience = () => {
   const education = EDUCATION;
@@ -10,52 +12,71 @@ const Experience = () => {
           <div className={bggradient}></div>
         </div>
       </div>
-      <div className="w-full h-full container mb-2 border-b-2 border-neutral-900">
-        <h2 className="pt-11 my-20 text-center text-4xl font-bold uppercase"> Work Experience </h2>
-        <div>
-          {EXPERIENCES.map((experience, index) => {
-            return (
-              <div
-                key={index}
-                className="mb-8 flex flex-wrap  lg:justify-center"
-              >
-                <div className="w-full lg:w-1/4">
-                  <p className="mb-2 text-sm text-neutral-400">
-                    {experience.year}
-                  </p>
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+
+        
+        <div className="w-full h-full container mb-2 border-b-2 border-neutral-900">
+          <h2 className="pt-11 my-20 text-center text-4xl font-bold uppercase">
+            {" "}
+            Work Experience{" "}
+          </h2>
+          <div>
+            {EXPERIENCES.map((experience, index) => {
+              return (
+                <div
+                  key={index}
+                  className="mb-8 flex flex-wrap  lg:justify-center"
+                >
+                  <div className="w-full lg:w-1/4">
+                    <p className="mb-2 text-sm text-neutral-400">
+                      {experience.year}
+                    </p>
+                  </div>
+                  <div className="w-full max-w-xl lg:w-3/4">
+                    <h6 className="mb-2 font-semibold ">
+                      {experience.role} -{" "}
+                      <span className="text-sm text-purple-100">
+                        {experience.company}
+                      </span>
+                    </h6>
+                    <p className="mb-4 text-neutral-400">
+                      {experience.description}
+                    </p>
+                    {experience.technologies.map((tech, index) => (
+                      <span
+                        className="mr-2 mt-4 rounded-md bg-neutral-900 px-2 py-1 font-medium text-fuchsia-200"
+                        key={index}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="w-full max-w-xl lg:w-3/4">
-                  <h6 className="mb-2 font-semibold ">
-                    {experience.role} -{" "}
-                    <span className="text-sm text-purple-100">
-                      {experience.company}
-                    </span>
-                  </h6>
-                  <p className="mb-4 text-neutral-400">
-                    {experience.description}
-                  </p>
-                  {experience.technologies.map((tech, index) => (
-                    <span
-                      className="mr-2 mt-4 rounded-md bg-neutral-900 px-2 py-1 font-medium text-cyan-500"
-                      key={index}
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
       
-      
+
       <div className="w-full h-full container mb-2">
-      <h2 className="my-20 text-center text-4xl font-bold uppercase"> Education </h2>
+        <motion.h2
+        initial = {{opacity:0}}
+        whileInView={{opacity:[0,1,1]}}
+        transition={{delay:0.2, duration:1}}
+        className="my-20 text-center text-4xl font-bold uppercase">
+          {" "}
+          Education{" "}
+        </motion.h2>
         {education.map((edu, index) => (
           <Education key={index} evalues={edu} />
         ))}
       </div>
+      </motion.div>
     </section>
   );
 };
