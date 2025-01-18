@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-const Education = ({ evalues, index }) => {
-  const { year, role, university, description } = evalues;
+const Certifications = ({ cvalues, index }) => {
+  const { year, role, university, description } = cvalues;
   
   
   return (
@@ -21,4 +21,4 @@ const Education = ({ evalues, index }) => {
   );
 };
 
-export default Education;
+export default Certifications;

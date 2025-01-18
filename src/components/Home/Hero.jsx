@@ -6,9 +6,11 @@ import { SOCIAL_MEDIA } from "../../constants/index";
 import { ABOUT_TEXT } from "../../constants/index";
 import { motion } from 'motion/react';
 import TypewriterText from "../../constants/TypewriterText";
+import ProfileImage from "./ProfileImage";
 
-const TestHero = () => {
+const Hero = () => {
   const socialMedia = SOCIAL_MEDIA;
+  const profileImage = profilePic;
   return (
     
     <div className="col">
@@ -26,11 +28,7 @@ const TestHero = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0">
-            <img
-              src={profilePic}
-              alt="Profile"
-              className="w-48 h-48 md:w-[23rem] md:h-[23rem] max-w-xs lg:max-w-lg object-cover rounded-lg"
-            />
+            <ProfileImage profile ={profileImage}/>
           </div>
         </div>
       </div>
@@ -57,4 +55,4 @@ const TestHero = () => {
   );
 };
 
-export default TestHero;
+export default Hero;

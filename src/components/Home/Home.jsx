@@ -1,5 +1,5 @@
 import React from "react";
-import TestHero from "./TestHero";
+import Hero from "./Hero";
 import Header from "./Header";
 import { motion } from "motion/react";
 
@@ -21,7 +21,7 @@ const Home = () => {
         >
           <div className="relative container mx-auto px-8 flex flex-col">
             <div className="flex items-center md:flex-col mt-12">
-              <TestHero />
+              <Hero />
             </div>
           </div>
         </motion.div>

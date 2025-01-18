@@ -1,9 +1,11 @@
-import { bggradient, EXPERIENCES, EDUCATION } from "../../constants";
+import { bggradient, EXPERIENCES, EDUCATION, CERTIFICATIONS } from "../../constants";
+import Certifications from "./Certifications";
 
 import Education from "./Education";
 import { motion } from "motion/react";
 
 const Experience = () => {
+  const certifications = CERTIFICATIONS;
   const education = EDUCATION;
   return (
     <section className=" text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-800">
@@ -13,13 +15,11 @@ const Experience = () => {
         </div>
       </div>
       <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-        >
-
-        
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+      >
         <div className="w-full h-full container mb-2 border-b-2 border-neutral-900">
           <h2 className="pt-11 my-20 text-center text-4xl font-bold uppercase">
             {" "}
@@ -28,7 +28,10 @@ const Experience = () => {
           <div>
             {EXPERIENCES.map((experience, index) => {
               return (
-                <div
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: [0, 0, 1] }}
+                  transition={{ delay: 0.2, duration: 1 }}
                   key={index}
                   className="mb-8 flex flex-wrap  lg:justify-center"
                 >
@@ -56,26 +59,40 @@ const Experience = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </div>
-      
 
-      <div className="w-full h-full container mb-2">
-        <motion.h2
-        initial = {{opacity:0}}
-        whileInView={{opacity:[0,1,1]}}
-        transition={{delay:0.2, duration:1}}
-        className="my-20 text-center text-4xl font-bold uppercase">
-          {" "}
-          Education{" "}
-        </motion.h2>
-        {education.map((edu, index) => (
-          <Education key={index} evalues={edu} />
-        ))}
-      </div>
+        <div className="w-full h-full container mb-2">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: [0, 1, 1] }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="my-20 text-center text-4xl font-bold uppercase"
+          >
+            {" "}
+            Education{" "}
+          </motion.h2>
+          {education.map((edu, index) => (
+            <Education key={index} evalues={edu} />
+          ))}
+        </div>
+        <div className="w-full h-full container mb-2">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: [0, 1, 1] }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="my-20 text-center text-4xl font-bold uppercase"
+          >
+            {" "}
+            Certifications{" "}
+          </motion.h2>
+          {certifications.map((cer, index) => (
+            <Certifications key={index} cvalues={cer} />
+          ))}
+        </div>
       </motion.div>
     </section>
   );

@@ -1,7 +1,7 @@
 
-const Blog = ({values, key}) => {
+const Blog = ({values, index}) => {
     const {title, date, content, author, image } = values;
-    const index = key;
+    
   return (
     <div key={index} className="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow hover:scale-100 hover:translate-y-3 hover:transition-transform hover:ease-in-out hover: cursor-pointer">
       <div>

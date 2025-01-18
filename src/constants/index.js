@@ -11,90 +11,83 @@ export const iconClass = ["h-12 w-12 hover:scale-125 hover:cursor-pointer transi
 export const bggradient = ["absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"]
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2021 - 2024",
+    role: "Senior Sales Executive",
+    company: "Funnelbyte",
+    description: `Drive business growth through innovative lead generation, engaging in inbound & outbound calling, LinkedIn lead generation, and crafting compelling cold emails. Build strong customer relationships, manage sales pipelines, and collaborate with teams to exceed sales targets.`,
+    technologies: ["Linkedin Sales Navigator", "Cold Calling", "apollo.io", "Zoominfo"],
   },
   {
     year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    role: "Software Developer",
+    company: "CodeClause",
+    description: `Specialized in developing robust ERP solutions using Java and SpringBoot, with extensive experience in Visual Studio and MS SQL Server. Delivered seamless integration and performance enhancements across various enterprise systems.`,
+    technologies: ["Springboot", "Java", "MS SQL Server", "Microsoft Visual Studio"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "2018 - 2019",
+    role: "Software Developer",
+    company: "Affimintus Technologies",
+    description: `Expert in developing scalable applications using Java MVC and Spring Core, with proficiency in designing RESTful Web APIs and version control with Git. Delivered innovative solutions and maintained high code quality standards.`,
+    technologies: ["Java MVC", "Springboot", "Spring Core", "RESTful API"],
   },
 ];
 
 export const EDUCATION = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    university: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    year: "2015 - 2019",
+    role: "Bach. of Engineering",
+    university: "Thakur Shivkumarsingh Memorial Engineering College",
+    description: `A comprehensive program focused on software development, algorithms, data structures, computer networks, and system design. Equipped with strong analytical and problem-solving skills, ready to tackle real-world technological challenges.`,
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    university: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    university: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    university: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    year: "2013 - 2015",
+    role: "HSC & SSC",
+    university: "State Board of Madhya Pradesh",
+    description: `Completed a well-rounded curriculum with a strong focus on science and mathematics, laying a solid foundation for advanced studies in engineering and technology.`,
   },
 ];
 
+export const CERTIFICATIONS = [
+  {
+    year: "2023 - 2024",
+    role: "Certified Java Developer",
+    university: "CodeClause",
+    description: `Demonstrated proficiency in Java programming through rigorous coursework and hands-on projects, covering topics such as OOP, data structures, and software design patterns. Recognized for excellent coding skills and problem-solving abilities.`,
+  },
+  {
+    year: "2022 - 2023",
+    role: "Full Stack Java Developer",
+    university: "Seed InfoTech, Pune",
+    description: `Gained expertise in both front-end and back-end development, including technologies such as HTML, CSS, JavaScript, and Node.js.Proficient in creating dynamic web applications, managing databases, and ensuring seamless user experiences.`,
+  },
+]
+
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Password Generator",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Created a secure password generator using HTML, CSS, JavaScript, JDBC, and JSP, focusing on encryption and user-friendly interfaces.",
+    technologies: ["HTML", "CSS", "Javascript", "JDBC", "JSP"],
+    link: "https://github.com/maddy046/CodeClauseInternship_PasswordGenerator"
   },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
+ 
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "Developed a personal portfolio website utilizing HTML, CSS, and JavaScript, showcasing projects and skills with a clean and responsive design.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    link: "https://github.com/maddy046/PortfolioWebsite"
   },
   {
-    title: "Blogging Platform",
+    title: "E-Learning Website",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Built an e-learning platform using HTML, CSS, and JavaScript for the front end, and integrated with backend technologies to provide interactive courses and assessments.",
+    technologies: ["ReactJS", "Springboot", "HTML5", "mySQL"],
+    link:"https://github.com/maddy046/CourseWebsite"
   },
 ];
 
@@ -149,25 +142,5 @@ export const BLOGS = [
     image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
     
   },
-  {
-    title: "Top 5 Tips for Building a Strong Team",
-    date: "July 8, 2023",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
-    author: "Maddy",
-    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
-  },
-  {
-    title: "Top 5 Tips for Building a Strong Team",
-    date: "July 8, 2023",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
-    author: "Maddy",
-    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
-  },
-  {
-    title: "Top 5 Tips for Building a Strong Team",
-    date: "July 8, 2023",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
-    author: "Maddy",
-    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
-  },
+  
 ] 

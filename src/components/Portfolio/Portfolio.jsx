@@ -11,25 +11,26 @@ const Portfolio = () => {
         </div>
       </div>
       <motion.div
+          className="w-full h-full container mb-2  mt-28 gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
         >
-      <div className="w-full h-full container mb-2  mt-28 gap-5">
+      <div className="">
         <h2 className="text-center mb-10 text-4xl font-bold uppercase">
           {" "}
           Projects{" "}
         </h2>
-        <div className="grid grid-cols-1 md:flex md:flex-wrap md:justify-center mb-5 gap-6">
+        <div className="grid grid-cols-1 md:flex md:flex-wrap md:justify-center mb-5 gap-6 ml-6 md:ml-0">
           {PROJECTS.map((proj, i) => (
             <div
               key={i}
-              class="relative max-w-sm bg-zinc-50/10 border border-purple-700 rounded-lg shadow"
+              className="relative max-w-sm bg-zinc-50/10 border border-purple-700 rounded-lg shadow"
             >
               <div className="px-2 py-3 w-full h-64 object-cover">
                 <a href="#">
-                  <img class="rounded-t-lg" src={proj.image} alt="" />
+                  <img className="rounded-t-lg" src={proj.image} alt="" />
                 </a>
               </div>
               <div className="p-5 pb-12">
@@ -43,12 +44,12 @@ const Portfolio = () => {
                 </p>
 
                 <a
-                  href="#"
+                  href={proj.link} target="_blank"
                   className="absolute bottom-3 inline-flex  items-center px-3 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-box hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 "
                 >
                   Visit
                   <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -56,9 +57,9 @@ const Portfolio = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
