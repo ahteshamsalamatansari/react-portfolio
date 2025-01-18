@@ -32,7 +32,7 @@ const Contact = () => {
       // Send the form using emailjs
       await emailjs.sendForm(
         'service_iryl4qq', // Replace with your service ID
-        'template_l6sd43c', // Replace with your template ID
+        'template_rvzx0hi', // Replace with your template ID
         form.current, // Use the form reference
         '2H-zdh6Hf-GZxfALN' // Replace with your public API key
       );

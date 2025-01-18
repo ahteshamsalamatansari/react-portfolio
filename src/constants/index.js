@@ -127,9 +127,9 @@ export const SOCIAL_MEDIA = [
 
 export const BLOGS = [
   {
-    title: "How to Create a Compelling Logo Design",
-    date: "July 12, 2023",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    title: "RESTful APIs Explained: A Developer's Road Map from Confusion to Confidence",
+    date: "December 15 2024",
+    content: "Discover how RESTful APIs power modern web applications. Learn the core principles, best practices, and implementation techniques for building robust API services.",
     author: "Maddy",
     image : "https://plus.unsplash.com/premium_photo-1723299602204-deac42432f93?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
@@ -137,7 +137,7 @@ export const BLOGS = [
   {
     title: "Top 5 Tips for Building a Strong Team",
     date: "July 8, 2023",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, dolor non fermentum molestie, justo ex ultricies mauris, vel rutrum neque ligula sed neque.",
+    content: "Master Email.js integration in your web projects. Learn to create dynamic contact forms and send emails directly from JavaScript without server setup.",
     author: "Maddy",
     image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
     
