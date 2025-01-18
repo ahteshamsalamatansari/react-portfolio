@@ -13,11 +13,11 @@ const Blog = ({values, index}) => {
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
       <div className="absolute inset-x-0 bottom-0 z-20 p-4">
-        <p className="mb-1 text-sm text-white text-opacity-80">
+        <p className="mb-1 text-sm  text-white text-opacity-80">
           {author} • <time>{date}</time>
         </p>
-        <h3 className="text-xl font-medium text-white">{title}</h3>
-        <p className="mt-1 text-white text-opacity-80">
+        <h3 className="text-s md:text-xl  font-medium text-white">{title}</h3>
+        <p className="text-xs md:text-sm mt-1 text-white text-opacity-80">
           {content}
         </p>
       </div>

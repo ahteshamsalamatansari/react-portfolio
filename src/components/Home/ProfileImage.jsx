@@ -19,8 +19,8 @@ const ProfileImage = ({ profile }) => {
 
   return (
     <motion.img
-      initial={isMobile ? { x:300, opacity: 0 } : { x: -1000, opacity: 0 }} // Mobile: vertical, Desktop: horizontal
-      animate={isMobile ? { x:0, opacity: 1 } : { x: 0, opacity: 1 }} // Adjust to slide in based on device
+      initial={isMobile ? { x:100, opacity: 0 } : { x: -1000, opacity: 0 }} // Mobile: vertical, Desktop: horizontal
+      animate={isMobile ? { x:[0], opacity: 1 } : { x: 0, opacity: 1 }} // Adjust to slide in based on device
       transition={{ duration: 1.5, delay: 0.5 }}
       src={profile}
       alt="Profile"

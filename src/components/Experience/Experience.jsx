@@ -21,7 +21,7 @@ const Experience = () => {
         transition={{ duration: 1.5 }}
       >
         <div className="w-full h-full container mb-2 border-b-2 border-neutral-900">
-          <h2 className="pt-11 my-20 text-center text-4xl font-bold uppercase">
+          <h2 className="pt-8 my-14 md:my-20 text-center text-3xl md:text-4xl font-bold uppercase">
             {" "}
             Work Experience{" "}
           </h2>
@@ -33,14 +33,14 @@ const Experience = () => {
                   whileInView={{ opacity: [0, 0, 1] }}
                   transition={{ delay: 0.2, duration: 1 }}
                   key={index}
-                  className="mb-8 flex flex-wrap  lg:justify-center"
+                  className="mb-8 flex flex-wrap scale-90 md:scale-100  lg:justify-center"
                 >
                   <div className="w-full lg:w-1/4">
                     <p className="mb-2 text-sm text-neutral-400">
                       {experience.year}
                     </p>
                   </div>
-                  <div className="w-full max-w-xl lg:w-3/4">
+                  <div className="w-full max-w-xl lg:w-3/4 ">
                     <h6 className="mb-2 font-semibold ">
                       {experience.role} -{" "}
                       <span className="text-sm text-purple-100">
@@ -52,7 +52,7 @@ const Experience = () => {
                     </p>
                     {experience.technologies.map((tech, index) => (
                       <span
-                        className="mr-2 mt-4 rounded-md bg-neutral-900 px-2 py-1 font-medium text-fuchsia-200"
+                        className="mr-2 mt-4 rounded-md text-wrap bg-neutral-900 px-2 py-1 font-medium text-fuchsia-200"
                         key={index}
                       >
                         {tech}
@@ -70,7 +70,7 @@ const Experience = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1, 1] }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="my-20 text-center text-4xl font-bold uppercase"
+            className="my-5 md:my-20 text-center text-3xl md:text-4xl font-bold uppercase "
           >
             {" "}
             Education{" "}
@@ -79,12 +79,12 @@ const Experience = () => {
             <Education key={index} evalues={edu} />
           ))}
         </div>
-        <div className="w-full h-full container mb-2">
+        <div className="w-full h-full container mb-2 ">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1, 1] }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="my-20 text-center text-4xl font-bold uppercase"
+            className="my-5 md:my-20 text-center text-3xl md:text-4xl font-bold uppercase"
           >
             {" "}
             Certifications{" "}

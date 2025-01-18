@@ -22,11 +22,11 @@ const Portfolio = () => {
           {" "}
           Projects{" "}
         </h2>
-        <div className="grid grid-cols-1 md:flex md:flex-wrap md:justify-center mb-5 gap-6 ml-6 md:ml-0">
+        <div className="grid grid-cols-1 md:flex md:flex-wrap justify-center mb-5 gap-6 ">
           {PROJECTS.map((proj, i) => (
             <div
               key={i}
-              className="relative max-w-sm bg-zinc-50/10 border border-purple-700 rounded-lg shadow"
+              className="relative max-w-sm scale-90 md:scale-100 bg-zinc-50/10 border border-purple-700 rounded-lg shadow"
             >
               <div className="px-2 py-3 w-full h-64 object-cover">
                 <a href="#">
@@ -68,12 +68,12 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className="w-full h-full container mb-2  mt-28 gap-5">
+        <div className="w-full h-full container mb-2 mt-28 gap-5">
           <h2 className="text-center mb-10 text-4xl font-bold uppercase">
             {" "}
             Blogs{" "}
           </h2>
-          <div className="px-2 md:flex grid gap-10 items-center  mb-4 md:flex-wrap">
+          <div className="px-2 scale-90 gap-4 md:flex grid items-center mb-4 md:flex-wrap">
             {BLOGS.map((blog, index) => (
               <Blog key={index} values={blog} /> //passing blog object as props to Blog component.
             ))}

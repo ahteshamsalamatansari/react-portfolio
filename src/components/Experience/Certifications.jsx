@@ -5,7 +5,7 @@ const Certifications = ({ cvalues, index }) => {
   
   return (
     <motion.div key={index} initial={{opacity:0}} whileInView={{opacity:[0,0,1]}} transition={{delay:0.2, duration:1}} >
-      <div className="mb-8 flex flex-wrap  lg:justify-center">
+      <div className="mb-4 md:mb-8 flex flex-wrap scale-90 md:scale-100 lg:justify-center">
         <div className="w-full lg:w-1/4">
           <p className="mb-2 text-sm text-neutral-400">{year}</p>
         </div>
