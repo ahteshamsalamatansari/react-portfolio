@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="flex justify-between items-center">
         <h3 className="font-sans text-xs">Made with ❤ and ☕ by Ahtesham Salamat Ansari © </h3>
         <div className="flex items-center gap-2 z-10">
-          <a  href="#"><FaFacebookF className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
-          <a  href="#"><FaLinkedinIn className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
-          <a  href="#"><FaGithub className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
-          <a  href="#"><FaInstagram className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
-          <a  href="#"><FaTwitter className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
+          <a  href="https://www.facebook.com/profile.php?id=100007339538234" target='_blank'><FaFacebookF className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
+          <a  href="https://www.linkedin.com/in/mudassirhussainansari" target='_blank'><FaLinkedinIn className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
+          <a  href="https://github.com/maddy046" target='_blank'><FaGithub className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
+          <a  href="https://www.instagram.com/maddy01432" target='_blank'><FaInstagram className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
+          <a  href="https://www.twitter.com/your-username" target='_blank'><FaTwitter className='hover:scale-90 hover:cursor-pointer hover:transition-all hover:ease-in-out' /></a>
         </div>
       </div>
     </footer>

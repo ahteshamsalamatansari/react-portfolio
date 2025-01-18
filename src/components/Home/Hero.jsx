@@ -1,4 +1,4 @@
-import profilePic from "../../assets/maddyProfile.png";
+import profilePic from "../../assets/profileUpdated.webp";
 import { HERO_CONTENT } from "../../constants/index";
 import SkillIcons from "./SkillIcons";
 import SocialFooter from "../Footer/SocialFooter";

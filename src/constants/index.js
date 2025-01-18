@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.webp";
+
+import project2 from "../assets/projects/project-2.webp";
+import project3 from "../assets/projects/project-3.webp";
+import blog1 from "../assets/projects/blog1.webp";
+import blog2 from "../assets/projects/blog2.webp";
 
 
 
@@ -83,7 +85,7 @@ export const PROJECTS = [
   },
   {
     title: "E-Learning Website",
-    image: project4,
+    image: project2,
     description:
       "Built an e-learning platform using HTML, CSS, and JavaScript for the front end, and integrated with backend technologies to provide interactive courses and assessments.",
     technologies: ["ReactJS", "Springboot", "HTML5", "mySQL"],
@@ -101,17 +103,17 @@ export const SOCIAL_MEDIA = [
   {
     name: "Github",
     icon: "fa-github",
-    url: "https://github.com/your-username",
+    url: "https://github.com/maddy046",
   },
   {
     name: "LinkedIn",
     icon: "fab fa-linkedin",
-    url: "https://www.linkedin.com/in/your-profile",
+    url: "https://www.linkedin.com/in/mudassirhussainansari",
   },
   {
     name: "Instagram",
     icon: "fab fa-instagram",
-    url: "https://www.instagram.com/your-username",
+    url: "https://www.instagram.com/maddy01432",
   },
   {
     name: "Twitter",
@@ -121,7 +123,7 @@ export const SOCIAL_MEDIA = [
   {
     name: "Facebook",
     icon: "fab fa-facebook-f",
-    url: "https://www.facebook.com/your-profile",
+    url: "https://www.facebook.com/profile.php?id=100007339538234",
   },
 ]
 
@@ -131,15 +133,15 @@ export const BLOGS = [
     date: "December 15 2024",
     content: "Discover how RESTful APIs power modern web applications. Learn the core principles, best practices, and implementation techniques for building robust API services.",
     author: "Maddy",
-    image : "https://plus.unsplash.com/premium_photo-1723299602204-deac42432f93?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image : blog1
 
   },
   {
-    title: "Top 5 Tips for Building a Strong Team",
-    date: "July 8, 2023",
+    title: "From Zero to Hero: Mastering Email.js for Modern Web Apps",
+    date: "January 5 2025",
     content: "Master Email.js integration in your web projects. Learn to create dynamic contact forms and send emails directly from JavaScript without server setup.",
     author: "Maddy",
-    image: "https://plus.unsplash.com/premium_photo-1669638780828-fbbe3088074a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfDB8MHx8fDA%3D"
+    image: blog2
     
   },
   
