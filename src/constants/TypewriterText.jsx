@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Use correct import from 'framer-motio
 const TypewriterText = ({ text }) => {
   return (
     <motion.h1
-      transition={{ duration: 0.8, delay: 1 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
       className="text-3xl md:text-4xl lg:text-6xl font-thin tracking-tight leading-tight"
     >
       {text.split('').map((char, index) => (
