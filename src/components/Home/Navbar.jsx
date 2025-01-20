@@ -6,7 +6,7 @@ const Navbar = ({ navOpen }) => {
     { label: 'Home', link: '/' },
     { label: 'Experience', link: '/experience' },
     { label: 'Portfolio', link: '/portfolio' },
-    { label: 'Reusme', link: '/resume' },
+    { label: 'Resume', link: '/resume' },
     { label: 'Contact', link: '/contact' }
   ];
 
