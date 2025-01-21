@@ -12,6 +12,10 @@ A beautifully crafted portfolio website created as a gift for Mudassir Hussain A
   <img src="https://skillicons.dev/icons?i=css" alt="CSS" title="CSS" />
 </div>
 
+## 🌐 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://mudassirhussainansari.netlify.app/)
+
 ## 📸 Website Preview
 
 ### Home Section
