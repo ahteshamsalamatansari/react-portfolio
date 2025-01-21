@@ -15,34 +15,25 @@ A beautifully crafted portfolio website created as a gift for Mudassir Hussain A
 ## 📸 Website Preview
 
 ### Home Section
-![Home Section Preview](/assets/images/home-preview.png)
-```
-Coming Soon
-```
+![Home Section Preview](./src/assets/extras/maddy.png)
+
+
+
 
 ### Work Experience
-![Work Section Preview](/assets/images/work-preview.png)
-```
-Coming Soon
-```
+![Work Section Preview](./src/assets/extras/exp.png)
+
 
 ### Portfolio Gallery
-![Portfolio Section Preview](/assets/images/portfolio-preview.png)
-```
-Coming Soon
-```
+![Portfolio Section Preview](./src/assets/extras/projects.png)
 
 ### Interactive Resume
-![Resume Section Preview](/assets/images/resume-preview.png)
-```
-Coming Soon
-```
+![Resume Section Preview](./src/assets/extras/Resume.png)
+
 
 ### Contact Form
-![Contact Section Preview](/assets/images/contact-preview.png)
-```
-Coming Soon
-```
+![Contact Section Preview](./src/assets/extras/contact.png)
+
 
 ## 🌟 Features
 
@@ -125,14 +116,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 Feel free to reach out and connect with Maddy on:
 
 <div align="center">
-  <a href="https://linkedin.com/in/yourusername" target="_blank">
+  <a href="https://www.linkedin.com/in/mudassirhussainansari" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
   </a>
-  <a href="https://github.com/yourusername" target="_blank">
+  <a href="https://github.com/maddy046" target="_blank">
     <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
   </a>
-  <a href="https://twitter.com/yourusername" target="_blank">
-    <img src="https://skillicons.dev/icons?i=twitter" alt="Twitter" />
+  <a href="https://www.instagram.com/maddy01432" target="_blank">
+    <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
   </a>
 </div>
 

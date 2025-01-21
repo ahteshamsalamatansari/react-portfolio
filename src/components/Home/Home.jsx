@@ -18,7 +18,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
-          className="xl:relative container mx-auto xl:px-8 flex flex-col"
+          className="xl:relative container xl:mx-auto xl:px-8 flex flex-col"
         >
           <div className="relative container mx-auto px-8 flex flex-col">
             <div className="flex items-center md:flex-col mt-12">
