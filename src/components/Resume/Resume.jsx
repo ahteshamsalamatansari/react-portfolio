@@ -38,7 +38,7 @@ const Resume = () => {
       </div>
       <motion.div
         // Responsive Pdf Clsses
-        className="container flex flex-col justify-center items-center mt-28 overflow-auto"
+        className="container flex flex-col justify-center items-center mt-28 overflow-auto mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

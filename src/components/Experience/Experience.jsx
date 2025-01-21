@@ -20,7 +20,7 @@ const Experience = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="w-full h-full container mb-2 border-b-2 border-neutral-900">
+        <div className="w-full h-full container mb-2 border-b-2 border-neutral-900  xl:mx-auto">
           <h2 className="pt-8 my-14 md:my-20 text-center text-3xl md:text-4xl font-bold uppercase">
             {" "}
             Work Experience{" "}
@@ -65,12 +65,12 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="w-full h-full container mb-2">
+        <div className="w-full h-full xl:mx-auto container mb-2">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1, 1] }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="my-5 md:my-20 text-center text-3xl md:text-4xl font-bold uppercase "
+            className="my-5  md:my-20 text-center text-3xl md:text-4xl font-bold uppercase "
           >
             {" "}
             Education{" "}
@@ -79,7 +79,7 @@ const Experience = () => {
             <Education key={index} evalues={edu} />
           ))}
         </div>
-        <div className="w-full h-full container mb-2 ">
+        <div className="w-full h-full container mb-2 xl:mx-auto ">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: [0, 1, 1] }}

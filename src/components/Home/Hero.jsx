@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <section className="container w-full p-4 mx-auto md:mt-14">
-        <div className="container">
+        <div className="container flex flex-col 2xl:gap-6">
           <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5">
             Professional <span> Skillset </span>
           </h1>
@@ -41,10 +41,10 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-tight text-center border-b-2 border-zinc-50/5 mt-16">
             Get Into <span> Touch </span>
           </h1>
-          <p className="text-center mt-4 font-sans tracking-tighter selection:bg-sky-400">
+          <p className="text-center mt-4 font-sans tracking-tighter selection:bg-sky-400 2xl:text-lg">
             {ABOUT_TEXT}
           </p>
-          <div className="w-full h-10 flex items-center justify-center space-x-3 mt-9">
+          <div className="w-full h-10 flex items-center justify-center space-x-3 mt-9 2xl:mt-10">
             {socialMedia.map((social, index) => (
               <SocialFooter values={social} key={index} />
             ))}

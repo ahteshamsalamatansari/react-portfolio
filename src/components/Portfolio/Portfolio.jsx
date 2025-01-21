@@ -11,7 +11,7 @@ const Portfolio = () => {
         </div>
       </div>
       <motion.div
-          className="w-full h-full container mb-2  mt-28 gap-5"
+          className="w-full h-full container mb-2  mt-28 gap-5 mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -22,7 +22,7 @@ const Portfolio = () => {
           {" "}
           Projects{" "}
         </h2>
-        <div className="grid grid-cols-1 md:flex md:flex-wrap justify-center mb-5 gap-6 ">
+        <div className="grid grid-cols-1 md:flex md:flex-wrap justify-center mb-5 gap-6 2xl:gap-16 ">
           {PROJECTS.map((proj, i) => (
             <div
               key={i}
@@ -68,12 +68,12 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className="w-full h-full container mb-2 mt-28 gap-5">
+        <div className="w-full h-full container mb-2 mt-28 gap-5 mx-auto">
           <h2 className="text-center mb-10 text-4xl font-bold uppercase">
             {" "}
             Blogs{" "}
           </h2>
-          <div className="px-2 scale-90 gap-4 md:flex grid items-center mb-4 md:flex-wrap">
+          <div className="px-2 scale-90 gap-10 mx-auto md:flex grid items-center mb-4 md:flex-wrap">
             {BLOGS.map((blog, index) => (
               <Blog key={index} values={blog} /> //passing blog object as props to Blog component.
             ))}
