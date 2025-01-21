@@ -36,7 +36,7 @@ A beautifully crafted portfolio website created as a gift for Mudassir Hussain A
 
 
 ### Contact Form
-![Contact Section Preview](./src/assets/extras/contact.png)
+![Contact Section Preview](./src/assets/extras/Contact.png)
 
 
 ## 🌟 Features
